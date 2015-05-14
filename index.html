@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Johnny-Fucking-Five</title>
+	<link rel="stylesheet" type="text/css" href="/public/stylesheets/bootstrap.min.css">
+
+</head>
+<body>
+<h1>Hello World!</h1>
+<button class="btn on">on</button>
+<button class="btn off">off</button>
+<script type="text/javascript" src="/public/javascripts/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/public/javascripts/bootstrap.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+	var socket = io();
+
+	$(document).ready(function(){
+		$('.btn.on').on('click', function (event) {
+			socket.emit('on');
+		});
+
+		$('.btn.off').on('click', function (event) {
+			socket.emit('off');
+		});
+	});
+
+</script>
+</body>
+</html>
