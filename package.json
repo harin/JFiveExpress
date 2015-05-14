@@ -1,0 +1,26 @@
+{
+  "name": "JFiveExpress",
+  "version": "1.0.0",
+  "description": "Test Johnny Five with Expressjs to create an web interface for arduino.",
+  "main": "app.js",
+  "dependencies": {
+    "socket.io": "^1.3.5",
+    "bootstrap": "^3.3.4",
+    "johnny-five": "^0.8.74",
+    "express": "^4.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harinsa/JFiveExpress.git"
+  },
+  "author": "Harin Sanghirun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harinsa/JFiveExpress/issues"
+  },
+  "homepage": "https://github.com/harinsa/JFiveExpress"
+}
